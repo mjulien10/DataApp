@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B6FC39D821B1877C00C47425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FC39D721B1877C00C47425 /* AppDelegate.swift */; };
-		B6FC39DA21B1877C00C47425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FC39D921B1877C00C47425 /* ViewController.swift */; };
 		B6FC39DD21B1877C00C47425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FC39DB21B1877C00C47425 /* Main.storyboard */; };
 		B6FC39DF21B1878A00C47425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FC39DE21B1878A00C47425 /* Assets.xcassets */; };
 		B6FC39E221B1878A00C47425 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FC39E021B1878A00C47425 /* LaunchScreen.storyboard */; };
 		B6FC39ED21B1878A00C47425 /* DataAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FC39EC21B1878A00C47425 /* DataAppTests.swift */; };
 		B6FC39F821B1878A00C47425 /* DataAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FC39F721B1878A00C47425 /* DataAppUITests.swift */; };
+		B6FC3A0B21B18A3200C47425 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FC3A0A21B18A3200C47425 /* TableViewController.swift */; };
+		B6FC3A0D21B18A6300C47425 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FC3A0C21B18A6300C47425 /* BucketItemCell.swift */; };
+		B6FC3A1021B18AB900C47425 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FC3A0F21B18AB900C47425 /* BucketItem.swift */; };
+		B6FC3A1221B18B5900C47425 /* bucket18.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6FC3A1121B18B5900C47425 /* bucket18.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		B6FC39D421B1877C00C47425 /* DataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FC39D721B1877C00C47425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B6FC39D921B1877C00C47425 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B6FC39DC21B1877C00C47425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6FC39DE21B1878A00C47425 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6FC39E121B1878A00C47425 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		B6FC39F321B1878A00C47425 /* DataAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FC39F721B1878A00C47425 /* DataAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAppUITests.swift; sourceTree = "<group>"; };
 		B6FC39F921B1878A00C47425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6FC3A0A21B18A3200C47425 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B6FC3A0C21B18A6300C47425 /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		B6FC3A0F21B18AB900C47425 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
+		B6FC3A1121B18B5900C47425 /* bucket18.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bucket18.csv; path = ../../../../Downloads/bucket18.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 			children = (
 				B6FC3A0521B187E400C47425 /* Resources */,
 				B6FC3A0721B187FC00C47425 /* Controller */,
+				B6FC3A0E21B18A9800C47425 /* Model */,
 				B6FC3A0621B187F200C47425 /* View */,
 			);
 			path = DataApp;
@@ -125,6 +132,7 @@
 		B6FC3A0521B187E400C47425 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B6FC3A1121B18B5900C47425 /* bucket18.csv */,
 				B6FC39D721B1877C00C47425 /* AppDelegate.swift */,
 				B6FC39DE21B1878A00C47425 /* Assets.xcassets */,
 				B6FC39E321B1878A00C47425 /* Info.plist */,
@@ -144,9 +152,18 @@
 		B6FC3A0721B187FC00C47425 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B6FC39D921B1877C00C47425 /* ViewController.swift */,
+				B6FC3A0A21B18A3200C47425 /* TableViewController.swift */,
+				B6FC3A0C21B18A6300C47425 /* BucketItemCell.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6FC3A0E21B18A9800C47425 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6FC3A0F21B18AB900C47425 /* BucketItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6FC39E221B1878A00C47425 /* LaunchScreen.storyboard in Resources */,
+				B6FC3A1221B18B5900C47425 /* bucket18.csv in Resources */,
 				B6FC39DF21B1878A00C47425 /* Assets.xcassets in Resources */,
 				B6FC39DD21B1877C00C47425 /* Main.storyboard in Resources */,
 			);
@@ -280,8 +298,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6FC39DA21B1877C00C47425 /* ViewController.swift in Sources */,
+				B6FC3A1021B18AB900C47425 /* BucketItem.swift in Sources */,
+				B6FC3A0D21B18A6300C47425 /* BucketItemCell.swift in Sources */,
 				B6FC39D821B1877C00C47425 /* AppDelegate.swift in Sources */,
+				B6FC3A0B21B18A3200C47425 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
