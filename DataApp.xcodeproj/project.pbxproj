@@ -97,12 +97,9 @@
 		B6FC39D621B1877C00C47425 /* DataApp */ = {
 			isa = PBXGroup;
 			children = (
-				B6FC39D721B1877C00C47425 /* AppDelegate.swift */,
-				B6FC39D921B1877C00C47425 /* ViewController.swift */,
-				B6FC39DB21B1877C00C47425 /* Main.storyboard */,
-				B6FC39DE21B1878A00C47425 /* Assets.xcassets */,
-				B6FC39E021B1878A00C47425 /* LaunchScreen.storyboard */,
-				B6FC39E321B1878A00C47425 /* Info.plist */,
+				B6FC3A0521B187E400C47425 /* Resources */,
+				B6FC3A0721B187FC00C47425 /* Controller */,
+				B6FC3A0621B187F200C47425 /* View */,
 			);
 			path = DataApp;
 			sourceTree = "<group>";
@@ -123,6 +120,33 @@
 				B6FC39F921B1878A00C47425 /* Info.plist */,
 			);
 			path = DataAppUITests;
+			sourceTree = "<group>";
+		};
+		B6FC3A0521B187E400C47425 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6FC39D721B1877C00C47425 /* AppDelegate.swift */,
+				B6FC39DE21B1878A00C47425 /* Assets.xcassets */,
+				B6FC39E321B1878A00C47425 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6FC3A0621B187F200C47425 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6FC39DB21B1877C00C47425 /* Main.storyboard */,
+				B6FC39E021B1878A00C47425 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6FC3A0721B187FC00C47425 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6FC39D921B1877C00C47425 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,7 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DataApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DataApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DataApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DataApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
