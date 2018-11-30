@@ -12,7 +12,7 @@ public class BucketItem
 {
     let itemContents : String
     let itemAuthor : String
-    
+     
     init(contents : String, author : String)
     {
         itemContents = contents
