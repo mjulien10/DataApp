@@ -14,6 +14,8 @@ class BucketItemCell: UITableViewCell {
     @IBOutlet weak var bucketItemSymbol : UILabel!
     @IBOutlet weak var bucketItemSignature : UILabel!
     
+    
+    var currentBucketItem
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

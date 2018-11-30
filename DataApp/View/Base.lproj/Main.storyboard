@@ -50,6 +50,11 @@
                                 <accessibility key="accessibilityConfiguration" identifier="dataIdentifier">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
+                                <connections>
+                                    <outlet property="bucketItemSignature" destination="t7R-XZ-uC9" id="0Kb-OE-hsS"/>
+                                    <outlet property="bucketItemSymbol" destination="E0W-Tv-2W8" id="iCQ-RW-D7X"/>
+                                    <outlet property="bucketItemText" destination="pdR-lX-z5g" id="1Tk-kd-2bA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
